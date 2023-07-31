@@ -52,6 +52,27 @@ const routes: Routes = [
       preloadingStrategy: PreloadAllModules,
       // custom preloading strategy depending on what we have set in data => preload flag
       // preloadingStrategy: CustomPreloadingStrategy,
+      //
+      // to start logging all events about routing, useful for debugging:
+      // enableTracing: true
+      //
+      // enable hash, usegul if we cannot setup the server to always return the index.html page
+      // useHash: true
+      //
+      // top, enabled, disabled (default, but enabled will be set as the default in the future)
+      // scrollPositionRestoration: "enabled",
+      //
+      // instead of using route.parent, we can make the parent's snapshot in the child with:
+      // paramsInheritanceStrategy: 'always'
+      //
+      // fix to an angular bug -> // vs ../ to go to parent
+      // relativeLinkResolution: 'corrected'
+      //
+      // malformedUriErrorHandler: (
+      //   error: URIError,
+      //   urlSerializer: UrlSerializer,
+      //   url: string
+      // ) => urlSerializer.parse("/page-not-found"),
     }),
   ],
   exports: [RouterModule],
